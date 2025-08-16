@@ -23,9 +23,24 @@ public class MirrorSplit {
     }
 
     public static Stack<Integer> mirrorSplit(Stack<Integer> original){
-        Stack<Integer> s2 = new Stack<>();
         Queue<Integer> queue = new LinkedList<>();
 
 
+
+        return original;
     }
+
+    public static void s2q(Stack<Integer> s, Queue<Integer> q) {
+        while (!s.isEmpty()) {
+            q.add(s.pop());
+        }
+    }
+
+    public static void q2s(Queue<Integer> q, Stack<Integer> s) {
+        while (!q.isEmpty()) {
+            s.push(q.remove());
+        }
+    }
+
+
 }
